@@ -1,0 +1,157 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;600;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #fafafa;
+}
+
+/* HEADER */
+
+header {
+    background-color: #A5E5C1;
+    box-shadow: 0 4px 6px rgba(68, 68, 68, 0.08);
+    padding: 10px 20px;
+    margin: auto;
+    height: 70px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+}
+
+.header__texto {
+    background-color: #b9eaED;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    color: #444444;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+/* LINKS HEADER */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo {
+    color: #444444;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+.navegacion a {
+    display: inline-block;
+    color: #444444;
+    margin: 0 12px;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.navegacion a:hover, .contacto a:hover, .logo:hover {
+    transform: scale(1.03);
+    transition: all 0.1s;
+    color: #1f1f1f;
+}
+
+.contacto a {
+    color: #444444;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* BODY */
+
+.body {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.titulo {
+    color: #444444;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.subtitulo {
+    color: #444444;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #A5E5C1;
+    margin-top: 40px;
+}
+
+.footer-nav a {
+    margin: 0 10px;
+    color: #444444;
+    font-weight: 500;
+}
+
+.dev-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 300;
+}
+
+.dev-link:hover, footer a:hover {
+    color: #1f1f1f;
+    text-decoration: underline;
+}
